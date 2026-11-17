@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{background:radial-gradient(1200px 600px at 20% -10%,#0B1F14 0%,#05100A 60%);color:#e8efe9;min-height:100vh}
+.card{@apply rounded-2xl border border-gold/15 bg-forest/70 backdrop-blur p-5 transition duration-300}
+.card-hover:hover{@apply -translate-y-1 border-gold/70 shadow-neon}
+.glow{color:#5CFFB0;text-shadow:0 0 14px rgba(92,255,176,.55);font-variant-numeric:tabular-nums}
+.btn{@apply rounded-xl bg-gradient-to-r from-gold to-amber px-4 py-2 font-semibold text-abyss transition hover:brightness-110 hover:shadow-neon disabled:opacity-50}
+.input{@apply w-full rounded-xl border border-gold/20 bg-abyss/80 px-3 py-2 outline-none transition focus:border-gold focus:shadow-neon}
+@keyframes soft{0%,100%{opacity:1}50%{opacity:.75}}.pulse-soft{animation:soft 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
